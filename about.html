@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<html>
+	<head>
+	   <title>About</title>
+	   <meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+	   <!--Bootstrap CSS-->
+	   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	   <style type="text/css">
+	   	div{
+	   		border: 0px solid black;
+	   		min-height: 100px;	
+	   		background: #010718;
+	   		padding: 5px;
+	   	}
+	   	body{
+	   		background-color: #fff;
+	   		padding: 30px;
+	   	}
+	   	nav{
+	   		height: 80px;
+	   		background: #09203A;
+
+	   	}
+	   	nav ul{
+	   		float: right;
+	   		margin-right: 25px;
+	   	}
+	   	nav ul li{
+	   		display: inline-block;
+	   		line-height: 80px;
+	   		margin: 0 15px;
+	   	}
+	   	nav ul li a{
+	   		position: relative;
+	   		color: white;
+	   		font-size: 18px;
+	   		padding: 5px 0;
+	   		text-transform: uppercase;
+	   		text-decoration: none;
+	   	}
+	   	nav ul li a:before{
+	   		position: absolute;
+	   		content: '';
+	   		left: 0;
+	   		bottom: 0;
+	   		height: 3px;
+	   		width: 100%;
+	   		background: white;
+	   		transform: scaleX(0);
+	   		transform-origin: right;
+	   		transition: transform .4s linear;
+	   	}
+	   	nav ul li a:hover:before{
+	   		transform: scaleX(1);
+	   		transform-origin: left;
+	   	}
+	   	
+	   	
+	   	h2{
+	   		color: #23B410;
+	   	}
+	   	p{
+	   		color: white;
+	   	}
+	   	#contact{
+	   		padding: 50px;
+	   		width: -30px;
+	   	}
+	   	label #btn,
+	   	label #cancel{
+	   		color: white;
+	   		font-size: 30px;
+	   		float: right;
+	   		line-height: 80px;
+	   		margin-right: 40px;
+	   		cursor: pointer;
+	   		display: none;
+	   	}
+	   	#check{
+	   		display: none;
+	   	}
+	   	@media (max-width: 1118px){
+	   		nav img{
+	   			left: 8%;
+	   		}
+	   		
+	   	}
+	   @media (max-width: 944px){
+	   		nav img{
+	   			left: 6%;
+	   			top: 20px;
+	   			width: 130px;
+	   		}
+	   		nav ul li a{
+	   			font-size: 17px;
+	   		}
+	   	}
+	   	@media (max-width: 860px){
+	   		label #btn{
+	   			display: none;
+	   		}
+	   		nav img{
+	   			left: 6%;
+	   			top: 20px;
+	   			width: 130px;
+	   		}
+	   		ul{
+	   			position: fixed;
+	   			width: 100%;
+	   			height: 100vh;
+	   			background: #09203A;
+	   			top: 80px;
+	   			left: -100%;
+	   			text-align: center;
+	   			transition: all .5s;
+	   		}
+	   		nav ul li{
+	   			display: block;
+	   			margin: 50px 0;
+	   			line-height: 30px;
+	   		}
+	   	
+	   	nav ul li a{
+	   		font-size: 20px;
+	   	}
+	   	#check:checked ~ ul{
+	   		left: 0;
+	   	}
+	   		#check:checked ~ label #cancel{
+	   			display: block;
+	   		}
+	   	
+	   </style>
+	</head>
+        <body>
+        	<div class="container">
+        		<div class="row" style="position: sticky1;">
+        			<div class="col">
+        				<input type="checkbox" id="check">
+        				<label for="check">
+        					<i class="fas fa-bars" id="btn"></i>
+        					<i class="fas fa-times" id="cancel"></i>
+        				</label>
+        				<nav>
+        		<ul>
+        			<li><a href="newhome.html">Home</a></li>
+        			<li><a href="about.html">About me</a></li>
+        			<li><a href="#skills">Skills</a></li>
+        			<li><a href="#contact">Contact</a></li>
+        		</ul>
+        	</nav>
+        			</div>
+        		</div>
+
+        		
+        		<!-- about section start-->
+        		<div class="row" id="about">
+        			<div class="col-lg-4">
+        				<img src="images/IMG_2103.jpg" alt="photo" class="img-fluid">>
+        			</div>
+        			<div class="col-lg-8">
+        				<h2>About Me</h2>
+        				<p>
+        					I'm Adeogun Abdulrasaq Olanrewaju from Lagos, Nigeria. I enjoy turning complex problems into simple, beautiful and intuitive designs.<br>
+        					<br>
+							My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way.
+        				</p>
+        			</div>	
+        		</div>
+
+        		<!-- skills section start-->
+        		<div class="row" id="skills" >
+        			<div class="col-lg" style="color: white; font-size: 23px;">My Skills <hr>
+        				<div class="col-lg-12" style="background-color: white;">
+        					<h3 style="color: black; font-size: 20px;">Languages and Databases</h2>
+        					<br>
+        					<img src="images/w3_html5-ar21.svg" alt="photo1">
+        					<img src="images/w3_css-ar21.svg" alt="photo2">
+        					<img src="images/java-ar21.svg" alt="photo3">
+        				</div>
+        				
+        				<div class="col-lg-12">
+        					<div class="col-lg-12" style="background-color: white;">
+        					<h3 style="color: black; font-size: 25px;">Tools</h2>
+        					<br>
+        					<img src="images/getbootstrap-ar21.svg" alt="photo1">
+        					<img src="images/git-scm-ar21.svg" alt="photo2">
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+
+
+        		<!-- contact section start-->
+        		<div class="container px-3">
+        			<div class="row g-2 gy-5 px-4" id="contact">
+	        			<h4 style="color: white; box-lines: 20px; font-size: 23px;">Contact <hr></h4>
+	        			<div class="col-lg-6 col-md-12" style="line-height: 40px; background-color: #09203A; padding: 30px;">
+	        				<i class="fa-solid fa-location-dot" style="color: white; font-size: 40px;"></i><br>
+	        				<span style="font-size: 30px; color: green;">My Address</span>
+	        				<p>
+	        					18 Suru St,<br>
+	        					Ijaiye, Lagos 102212
+	        				</p>
+
+
+	        			</div>
+	        			<div class="col-lg-6 col-md-12" style="color: white; font-size: 40px; background-color: #09203A; padding: 30px;">
+	        				<i class="fa-solid fa-square-share-nodes"></i>
+	        				<span style="font-size: 30px; color: green;">Social Profiles</span><br>
+	        				<i class="fa-brands fa-facebook"></i>
+	        				<i class="fa-brands fa-twitter"></i>
+	        				<i class="fa-brands fa-instagram"></i>
+	        			</div>
+
+	        			<div class="col-lg-6 col-md-12" style="line-height: 50px; background-color: #09203A; padding: 30px;">
+	        				<i class="fa-sharp fa-solid fa-envelope" style="color: white; font-size: 40px;"></i>
+	        				<span style="font-size: 30px; color: green;">Email</span><br>
+	        				<p style="color: white;">adeabdolan@gmail.com</p>
+
+	        			</div>
+	        			<div class="col-lg-6 col-md-12" style="line-height: 50px; background-color: #09203A; padding: 30px;">
+	        				<i class="fa-solid fa-phone-volume" style="color: white; font-size: 40px;"></i>
+	        				<span style="font-size: 30px; color: green;">Contact</span><br>
+	        				<p style="color: white;">+234 (0) 8101791405</p>
+	        			</div>
+	        		</div>	
+        		</div>
+
+        			<div class="row">
+        				<div class="col-lg-12 col-md-12">
+	        			<form>
+	        				<div class="row g-3" style="background-color: #09203A;">
+	        					<h4 style="color: white; font-size: 23px;">Contact Form<hr></h4>
+							  <div class="col-lg-6 col-md-12" style="background-color: #09203A;">
+							    <input type="text" class="form-control" placeholder="Full name" aria-label="Full name" style="height: 60px">
+							  </div>
+
+							  <div class="col-lg-6 col-md-12" style="background-color: #09203A;">
+							    <input type="text" class="form-control" placeholder="name@example.com" aria-label="email" style="height: 60px">
+							  </div>
+
+							  <div class="form-floating" style="background-color: #09203A;">
+								  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+								  <label for="floatingTextarea2">Your Message</label>
+							  </div>
+
+							  <div class="col-12" style="text-align: right; background-color: #09203A;">
+							    <button class="btn btn-primary" type="submit">Submit form</button>
+							  </div>
+
+							</div>
+        				</form>
+        			</div>
+        		
+
+        		<!-- footer section start-->
+        		<div class="row" style="text-align: center; padding-bottom: 50px; margin-bottom: 50px; background-color: #09203A;">
+        			<div class="col-lg-12 col-md-12" style="background-color: #09203A;">
+        				<p>Created by Adeogun Abdulrasaq. &copy 2022</p>
+        			</div>	
+        		</div>
+
+        	</div>
+        			
+        			
+        
+
+    
+        </body>
+</html>
